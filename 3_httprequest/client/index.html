@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Cloud Code Demo - 3 - Parse.Cloud.httpRequest</title>
+  </head>
+  <body>
+  </body>
+  <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
+  <script>
+    Parse.initialize("MBlJrRv8Yafudg9SqC2e7uhaFY6zcTv2ZSiU6rBM",
+      "PrXZSVNe851n6CHGJu09k1hITYmuh3NogYDXCZjN");
+    Parse.Cloud.run('get', {singer: 'John Mayer'}, {
+      success: function(result) {
+      window.alert(result);
+    },
+    error: function(error) {
+    
+    }
+  });
+  </script>
+</html>

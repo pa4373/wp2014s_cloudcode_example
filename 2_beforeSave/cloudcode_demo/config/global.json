@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "cloudcode_demo"
+        }, 
+        "cloudcode_demo": {
+            "applicationId": "MBlJrRv8Yafudg9SqC2e7uhaFY6zcTv2ZSiU6rBM", 
+            "masterKey": "8KcGUJHawMyRdIvcOmw3qM7L4pcypDYRzWx5vLLg"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}

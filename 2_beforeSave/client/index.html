@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Cloud Code Demo - 2 - beforeSave</title>
+  </head>
+  <body>
+  </body>
+  <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
+  <script>
+    Parse.initialize("MBlJrRv8Yafudg9SqC2e7uhaFY6zcTv2ZSiU6rBM",
+      "PrXZSVNe851n6CHGJu09k1hITYmuh3NogYDXCZjN");
+    var ExampleClass = Parse.Object.extend("ExampleClass");
+    var example_object = new ExampleClass();
+    example_object.set('text', 'I don\'t believe it!');
+    example_object.save(null, {
+      success: function(object){
+        var text = object.get('text');
+        window.alert(text);
+      }, error: function(object){
+      
+      }        
+    });
+  </script>
+</html>
